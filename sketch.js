@@ -15,6 +15,7 @@ var txt = "HAPPY BIRTHDAY";
 var name = "TO BEHZAD";
 var sfxPop;
 var MusicB;
+var played = true;
 
 function preload() {
 	foto = loadImage("assets/img/foto.png");
@@ -89,5 +90,7 @@ function keyPressed() {
 			balloons.push(new Ballon());
 		}
 	}
-	MusicB.play();
+	if (played){
+		MusicB.play();
+	}
 }
