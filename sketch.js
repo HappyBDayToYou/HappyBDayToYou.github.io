@@ -12,7 +12,7 @@ var total = 12;
 var font;
 var foto, bgStatic;
 var txt = "HAPPY BIRTHDAY";
-var name = "TO BEHZAD❤️\n Best wishes";
+var name = "TO BEHZAD💘.\n Best wishes";
 var sfxPop;
 
 function preload() {
