@@ -93,8 +93,8 @@ function keyPressed() {
 	if (played){
 		MusicB.play();
 		played = false;
-	} else if (!played) {
+	} else {
 		MusicB.pause();
-		played = false;
+		played = true;
 	}
 }
