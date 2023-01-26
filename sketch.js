@@ -12,14 +12,16 @@ var total = 12;
 var font;
 var foto, bgStatic;
 var txt = "HAPPY BIRTHDAY";
-var name = "TO BEHZAD💘.\n Best wishes";
+var name = "TO BEHZAD";
 var sfxPop;
+var MusicB;
 
 function preload() {
 	foto = loadImage("assets/img/foto.png");
 	bgStatic = loadImage("assets/img/jakarta.png");
 	font = loadFont("assets/font/FredokaOne.ttf");
 	sfxPop = loadSound("assets/sfx/pop.mp3");
+	MusicB = loadSound("music.mp3");
 }
 
 function setup() {
@@ -87,4 +89,5 @@ function keyPressed() {
 			balloons.push(new Ballon());
 		}
 	}
+	MusicB.play();
 }
