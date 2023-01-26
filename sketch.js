@@ -12,7 +12,7 @@ var total = 12;
 var font;
 var foto, bgStatic;
 var txt = "HAPPY BIRTHDAY";
-var name = "TO BEHZAD";
+var name = "TO BEHZAD...";
 var sfxPop;
 var MusicB;
 var played = true;
@@ -92,5 +92,9 @@ function keyPressed() {
 	}
 	if (played){
 		MusicB.play();
+		played = false;
+	} else if (!played) {
+		MusicB.pause();
+		played = false;
 	}
 }
